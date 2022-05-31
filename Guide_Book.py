@@ -77,7 +77,7 @@ def login():
     driver.get(url)
 
     driver.find_element_by_xpath('//*[@id="navbar"]/div[1]/div[3]/div[2]/a').click()
-    user_id = "als77770@naver.com"      # 예시 아이디
+    user_id = "a"      # 예시 아이디
     user_passwd = "qwe123"              # 예시 비번
 
     time.sleep(1)

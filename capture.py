@@ -5,8 +5,8 @@ import datetime
 import time
 import pyautogui
 
-load_wb = load_workbook('C:\\Users\\UNI-S\\Desktop\\SBS 태국 채증_220413.xlsx')
-load_ws = load_wb['we-play']
+load_wb = load_workbook('C:')   # 파일경로
+load_ws = load_wb['sheet']  # 시트명
 data = load_ws.values
 columns = next(data)[0:]
 f = pd.DataFrame(data, columns=columns)

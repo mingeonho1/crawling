@@ -34,8 +34,8 @@ def login():
         driver.get(first_url)
         time.sleep(1)
 
-        user_id = "9tiger"
-        user_pw = "666666"
+        user_id = ""
+        user_pw = ""
         time.sleep(1)
         driver.find_element_by_id('username').send_keys(user_id)
         time.sleep(2)
@@ -65,7 +65,7 @@ def crawling():
                 video.click()
             driver.execute_script("window.scrollTo(0, 200)")
             time.sleep(5)
-            path = r"C:\Users\UNI-S\Desktop\inwiptv"
+            path = r"C:"
             dt_datetime = datetime.datetime.now()
             format = '%Y-%m-%d %H %M %S'
             str_datetime = datetime.datetime.strftime(dt_datetime, format)
