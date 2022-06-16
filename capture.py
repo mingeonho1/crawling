@@ -12,7 +12,8 @@ columns = next(data)[0:]
 f = pd.DataFrame(data, columns=columns)
 
 driver = webdriver.Chrome('C:\\user\\chromedriver.exe')
-driver.set_window_position(1280, 0)
+driver.set_window_position(0,1)
+driver.set_window_size(1060, 1083)
 driver.maximize_window()
 
 for i, v in enumerate(f['호스트URL']):
@@ -32,6 +33,6 @@ for i, v in enumerate(f['호스트URL']):
     time.sleep(5)
     path = r"C:\Users\UNI-S\Desktop\we-play"
     print("Current Mouse Position:",pyautogui.position())
-    pyautogui.screenshot(f'{path}\\{i+1} {str_datetime}.png', region=(1280, 0, 2560, 720))
+    pyautogui.screenshot(f'{path}\\{i+1} {str_datetime}.jpg', region=(0, 0, 1060, 1083))
     print("성공")
     print("")
